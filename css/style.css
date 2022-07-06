@@ -5,3 +5,46 @@
     box-sizing: border-box;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    height: 100vh;
+    flex-direction: column;
+}
+
+#boss-container {
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: yellow;
+
+}
+
+#bottom-aside {
+    height: 40px;
+    background-color: red;
+}
+
+#side-bar {
+    width: 80px;
+    background-color: blue;
+}
+
+main {
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: column;
+}
+
+#main-header {
+    background-color: violet;
+    height: 30px;
+}
+
+#main-container {
+    background-color: aqua;
+    flex-basis: 0;
+    flex-grow: 1;
+}
