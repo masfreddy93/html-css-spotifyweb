@@ -3,12 +3,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+}
+
+ul,ol,a {
+    list-style: none;
+    color: currentColor;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* Variabili */
+
+
+
+/* MACRO LAYOUT */
 
 body {
     height: 100vh;
@@ -23,7 +40,7 @@ body {
 }
 
 #bottom-aside {
-    height: 40px;
+    /* height: 40px; */
     background-color: red;
 }
 
@@ -48,3 +65,68 @@ main {
     flex-basis: 0;
     flex-grow: 1;
 }
+
+
+/* MEDIA QUERY MARCO LAYOUT*/
+/* md */
+@media screen and (max-width: 1020px){
+
+}
+
+/* s */
+@media screen and (max-width: 768px){
+
+}
+
+/* xs */
+@media screen and (max-width: 576px){
+    #side-bar {
+        width: 30px;
+        background-color: purple;
+    }
+}
+
+
+
+/* Bottom Aside */
+#bottom-aside {
+
+}
+
+#bottom-aside .aside-col-left {
+    padding: 1.375rem 0.5rem;
+    gap: 2.5rem;
+}
+
+#bottom-aside .song-details,
+#bottom-aside .like {
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
+
+
+
+
+#bottom-aside .thumbnail {
+    width: 2.5rem;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+}
+
+#bottom-aside .title h3 {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+#bottom-aside .title p {
+    font-size: 0.66rem;
+}
+
+#bottom-aside .like i {
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
