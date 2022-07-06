@@ -89,10 +89,9 @@ main {
 
 
 /* Bottom Aside */
-#bottom-aside {
 
-}
 
+/* col left */
 #bottom-aside .aside-col-left {
     padding: 1.375rem 0.5rem;
     gap: 2.5rem;
@@ -104,16 +103,15 @@ main {
     align-items: center;
 }
 
-
-
-
-
-
 #bottom-aside .thumbnail {
     width: 2.5rem;
     object-fit: cover;
     object-position: center;
     aspect-ratio: 1/1;
+}
+
+#bottom-aside .thumbnail img{
+    display: block;
 }
 
 #bottom-aside .title h3 {
@@ -129,4 +127,48 @@ main {
     font-size: 0.875rem;
     cursor: pointer;
 }
+
+/* col center */
+#bottom-aside .aside-col-center {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#bottom-aside .aside-col-center .icons i {
+    font-size: 1rem;
+}
+
+#bottom-aside .aside-col-center .icons .fa-circle-play {
+    font-size: 2rem;
+}
+
+#bottom-aside .aside-col-center .icons {
+    gap: 1.25rem;
+    align-items: center;
+}
+
+#bottom-aside .aside-col-center .icons span {
+    font-size: 0.675rem;
+}
+
+#bottom-aside .aside-col-center .icons .icons-left,
+#bottom-aside .aside-col-center .icons .icons-right {
+    gap: 2rem;
+}
+
+#bottom-aside .aside-col-center .playing {
+    gap: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+#bottom-aside .aside-col-center .playing .barra{
+    background-color: yellow;
+    
+}
+
+
 
