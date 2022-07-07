@@ -18,7 +18,7 @@ img {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 /* Variabili */
@@ -41,8 +41,7 @@ body {
 }
 
 #bottom-aside {
-    /* height: 40px; */
-    background-color: red;
+    background-color: #282828;
 }
 
 #side-bar {
@@ -97,11 +96,15 @@ main {
 #bottom-aside {
     padding: 0 0.5rem;
     gap: 1rem;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .aside-col-left,
 .aside-col-right {
     flex-basis: 230px;
+    align-items: center;
 }
 
 /* col left */
@@ -144,9 +147,9 @@ main {
 
 /* col center */
 #bottom-aside .aside-col-center {
-    flex-grow: 1;
+    flex-basis: 35%;
     flex-direction: column;
-    align-items: center;
+    align-items: initial;
     justify-content: center;
     gap: 0.5rem;
 }
@@ -162,6 +165,7 @@ main {
 #bottom-aside .aside-col-center .icons {
     gap: 1.25rem;
     align-items: center;
+    align-self: center;
 }
 
 #bottom-aside .aside-col-center .icons span {
@@ -176,12 +180,25 @@ main {
 #bottom-aside .aside-col-center .playing {
     gap: 1.5rem;
     font-weight: bold;
+    font-size: 00.675rem;
     align-items: center;
+    justify-content: space-between;
 }
 
 #bottom-aside .barra{
-    background-color: yellow;
+    background-color: #5A5A5A;
+    flex-grow: 1;
+    height: 3px;
+    border-radius: 1.5rem;
 }
+
+#bottom-aside .barra .caricamento-barra {
+    background-color: #C1C1C1;
+    width: 25%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+
 
 /* column right */
 #bottom-aside .aside-col-right {
@@ -190,4 +207,26 @@ main {
     font-size: 0.75rem;
     justify-content: end;
 }
+
+
+/* MEDIA QUERY MARCO LAYOUT*/
+/* md */
+@media screen and (max-width: 1020px){
+
+}
+
+/* s */
+@media screen and (max-width: 768px){
+    #bottom-aside .like {
+        flex-direction: column;
+    }    
+}
+
+/* xs */
+@media screen and (max-width: 576px){
+    #bottom-aside .aside-col-left {
+        gap: 1rem;
+    }
+}
+
 
