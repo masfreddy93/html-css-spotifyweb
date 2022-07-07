@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
 }
 
 ul,ol,a {
@@ -60,7 +59,7 @@ main {
 
 #main-header {
     background-color: violet;
-    height: 30px;
+    height: 85px;
 }
 
 #main-container {
@@ -99,6 +98,7 @@ main {
     /* flex-wrap: nowrap; */
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 
 .aside-col-left,
@@ -140,7 +140,7 @@ main {
     font-size: 0.66rem;
 }
 
-#bottom-aside .like i {
+#bottom-aside i {
     font-size: 0.875rem;
     cursor: pointer;
 }
@@ -209,7 +209,7 @@ main {
 }
 
 
-/* MEDIA QUERY MARCO LAYOUT*/
+/* MEDIA QUERY BOTTOM ASIDE*/
 /* md */
 @media screen and (max-width: 1020px){
 
@@ -230,3 +230,93 @@ main {
 }
 
 
+/* HEADER (SIDE-BAR) */
+#side-bar * {
+    
+    border: 2px solid saddlebrown;
+}
+
+#side-bar {
+    flex-direction: column;
+}
+
+#side-bar .john-doe {
+    margin-top: auto;
+}
+
+/* logo spotify */
+#side-bar .logo-spotify {
+    height: 85px;
+    padding: 15px;
+}
+
+#side-bar .logo-spotify .logo-spotify-normal {
+    display: block;
+    height: 40px;
+}
+
+#side-bar .logo-spotify .logo-spotify-small {
+    display: none;
+}
+
+/* nav bar */
+#side-bar .nav-bar {
+    padding: 0 15px;
+    margin-bottom: 1.25rem;
+    color: #A3A3A3;
+}
+
+#side-bar .nav-bar > .row{
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#side-bar .nav-bar > .row > :first-child {
+    color: white;
+}
+
+#side-bar .nav-bar li{
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#side-bar .nav-bar img{
+    width: 22px;
+}
+
+#side-bar .nav-bar h3{
+    font-size: 0.81rem;
+    font-weight: bold;
+}
+
+/* playlist */
+#side-bar .playlist {
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 0 15px;
+    color: #A3A3A3;
+}
+
+#side-bar .playlist > h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+#side-bar .playlist .create-playlist {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#side-bar .playlist .container-create {
+    width: 37px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3A3A3;
+}
+
+#side-bar .playlist .container-create .add-playlist {
+    font-size: 1.5rem;
+    color: orange;
+}
+
+/* name-playlist */
