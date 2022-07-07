@@ -36,6 +36,7 @@ body {
     flex-basis: 0;
     flex-grow: 1;
     background-color: yellow;
+    overflow: hidden;
 
 }
 
@@ -45,8 +46,11 @@ body {
 }
 
 #side-bar {
-    width: 80px;
+    flex-shrink: 0;
+    flex-basis: 230px;
     background-color: blue;
+    overflow: scroll;
+    height: 100%;
 }
 
 main {
@@ -81,17 +85,23 @@ main {
 /* xs */
 @media screen and (max-width: 576px){
     #side-bar {
-        width: 30px;
+        flex-basis: 50px;
         background-color: purple;
     }
 }
 
 
 
-/* Bottom Aside */
+/* BOTTOM ASIDE */
+
 #bottom-aside {
     padding: 0 0.5rem;
     gap: 1rem;
+}
+
+.aside-col-left,
+.aside-col-right {
+    flex-basis: 230px;
 }
 
 /* col left */
@@ -178,4 +188,6 @@ main {
     align-items: center;
     gap: 0.75rem;
     font-size: 0.75rem;
+    justify-content: end;
 }
+
