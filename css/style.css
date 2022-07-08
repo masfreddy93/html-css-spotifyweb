@@ -84,7 +84,7 @@ main {
 @media screen and (max-width: 576px){
     #side-bar {
         flex-basis: 50px;
-        background-color: purple;
+        
     }
 }
 
@@ -231,10 +231,9 @@ main {
 
 
 /* HEADER (SIDE-BAR) */
-#side-bar * {
-    
+/* #side-bar * { 
     border: 2px solid saddlebrown;
-}
+} */
 
 #side-bar {
     flex-direction: column;
@@ -264,6 +263,7 @@ main {
     padding: 0 15px;
     margin-bottom: 1.25rem;
     color: #A3A3A3;
+    position: relative;
 }
 
 #side-bar .nav-bar > .row{
@@ -273,6 +273,17 @@ main {
 #side-bar .nav-bar > .row > :first-child {
     color: white;
 }
+
+#side-bar .nav-bar > .row > :first-child::before {
+    content: "";
+    display: block;
+    border-left: 1px solid greenyellow;
+    position: absolute;
+    left: 0;
+    top: 0;   
+    height: 33.3%; 
+}
+
 
 #side-bar .nav-bar li{
     gap: 0.5rem;
@@ -317,7 +328,7 @@ main {
 
 #side-bar .playlist .container-create .add-playlist {
     font-size: 1.5rem;
-    color: orange;
+    color: black;
 }
 
 /* name-playlist */
@@ -367,8 +378,60 @@ main {
 
 #side-bar .john-doe .user img {
     display: block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     background-color: #A3A3A3;
     border-radius: 50%;
+}
+
+
+/* MEDIA QUERY SIDE-BAR */
+/* xs */
+@media screen and (max-width: 576px){
+    #side-bar .logo-spotify .logo-spotify-normal,
+    #side-bar .nav-bar li h3,
+    #side-bar .playlist,
+    #side-bar .name-playlist,
+    #side-bar .john-doe h3,
+    #side-bar .john-doe .bordo,
+    #side-bar .john-doe h2
+    {
+        display: none;
+    }
+
+    #side-bar .logo-spotify .logo-spotify-small {
+        display: block;
+        height: 25px;
+    }
+
+    #side-bar .logo-spotify {
+        height: auto;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #side-bar .nav-bar {
+        padding: 5px;
+        
+    }
+
+    #side-bar .nav-bar li{
+        justify-content: center;
+    }
+    
+    #side-bar .john-doe {
+        padding: 5px;
+    }
+
+    #side-bar .john-doe .row{
+        padding: 5px;
+        justify-content: center;
+    }
+
+    #side-bar .nav-bar > .row > :first-child::before {
+        display: none; 
+    }
+
 }
