@@ -598,7 +598,8 @@ main {
 #main-container .personal-wrapper .recently-played-wrapper .card {
     /* flex-basis: 0;
     flex-grow: 1; */
-    max-width: calc((100% - 25px) / 6);
+    max-width: calc((100% - 60px) / 6);
+    flex-grow: 1;
 }
 
 #main-container .personal-wrapper .card figure {
@@ -675,7 +676,7 @@ main {
     } 
     #main-container .personal-wrapper .recently-played-wrapper .card {
         
-        max-width: calc((100% - 25px) / 4);
+        max-width: calc((100% - 36px) / 4);
     }
 
 }
@@ -688,7 +689,7 @@ main {
     } 
     #main-container .personal-wrapper .recently-played-wrapper .card {
         
-        max-width: calc((100% - 25px) / 2);
+        max-width: calc((100% - 12px) / 2);
     } 
 }
 
@@ -700,6 +701,6 @@ main {
     } 
     #main-container .personal-wrapper .recently-played-wrapper .card {
         
-        max-width: calc((100% - 25px) / 2);
+        max-width: calc((100% - 12px) / 2);
     }
 }
