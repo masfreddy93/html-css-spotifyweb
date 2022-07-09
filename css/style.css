@@ -1,6 +1,7 @@
 /* RESET */
 :root {
     --bg-color-main-header: #080B12;
+    --light-gray: #A3A3A3;
 }
 
 *{
@@ -23,9 +24,6 @@ img {
     display: flex;
     flex-wrap: nowrap;
 }
-
-/* Variabili */
-
 
 
 /* MACRO LAYOUT */
@@ -529,3 +527,52 @@ main {
     display: table;
     clear: both;
 } */
+
+#main-header .main-header-button:hover{
+    transform: scale(1.1);
+}
+
+
+/* MAIN-CONTAINER */
+#main-container {
+
+}
+
+/* sections-wrapper */
+#main-container .sections-wrapper{
+    text-transform: uppercase;
+    color: var(--light-gray);
+    font-weight: bold;
+    font-size: 0.875rem;
+    background-color: darkmagenta;
+}
+
+#main-container .sections-wrapper > .row{
+    max-width: 660px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+#main-container .sections-wrapper .row li {
+    padding: 0.5rem;
+    white-space: nowrap;
+    position: relative;
+}
+
+#main-container .sections-wrapper .row .underlined::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    border: 1px solid greenyellow;
+}
+
+#main-container .sections-wrapper .row li:hover {
+    color: white;
+}
